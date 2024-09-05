@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping an array</title>
+</head>
+<body>
+<h1 style="text-align: center;">MAPPING AN ARRAY</h1>   
+<p>Multipling every element by 10 in an array.</p>
+<p id="product"></p>
+
+<script>
+    var value = [12,40,50,32,10];
+
+    function myfunction(num){
+       return num * 10;    
+}
+
+var newarray = value.map(myfunction);
+document.getElementById("product").innerHTML = newarray;
+</script>
+</body>
+</html>
